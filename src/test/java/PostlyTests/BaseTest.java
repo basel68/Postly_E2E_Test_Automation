@@ -19,7 +19,7 @@ public class BaseTest {
         loginPage.login("basel@gmail.com","123456");
         loginPage.waitUntilUrlChanges();
         if (driver == null) {
-            throw new IllegalArgumentException("Driver must be set"); // Helpful validation
+            throw new IllegalArgumentException("Driver must be set");
         }
         else{
             System.out.println("Driver is set");
